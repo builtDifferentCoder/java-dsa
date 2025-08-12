@@ -1,15 +1,12 @@
-
-
-
 public class Main{
     public static void main(String[] args){
-
-        Sorting s=new Sorting();
-
-        int arr[]={4,2,6,7,0,9,1};
-        s.mergeSort(arr, 0, arr.length-1);
-        for(int i:arr){
-            System.out.println(i);
-        }
+        DoubleLinkedList l=new DoubleLinkedList();
+        l.insert(5);
+        l.insert(9);
+        l.insert(12);
+        l.insert(3);
+        l.insert(1);
+        l.delete(2);
+        l.show();
     }
 }
