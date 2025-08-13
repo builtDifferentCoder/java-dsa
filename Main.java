@@ -1,12 +1,19 @@
+
+
 public class Main{
+
     public static void main(String[] args){
-        DoubleLinkedList l=new DoubleLinkedList();
-        l.insert(5);
-        l.insert(9);
-        l.insert(12);
-        l.insert(3);
-        l.insert(1);
-        l.delete(2);
-        l.show();
+
+        LFU lfu=new LFU(5);
+        lfu.set(1, 1);
+        lfu.set(2, 2);
+        lfu.set(3, 3);
+        lfu.set(4, 4);
+        lfu.set(5, 5);
+        System.out.println(lfu.get(1));
+        System.out.println(lfu.get(1));
+        System.out.println(lfu.get(1));
+        lfu.set(6, 6);
+        System.out.println(lfu.get(6));
     }
 }
